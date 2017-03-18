@@ -1,2 +1,5 @@
 #Node dependency directory
 node_modules
+
+#VSCode local settings directory
+.vscode
