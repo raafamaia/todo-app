@@ -3,3 +3,6 @@ node_modules
 
 #VSCode local settings directory
 .vscode
+
+#Build folder for compiled ts files
+build
