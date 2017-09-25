@@ -1,0 +1,4 @@
+{
+  "extends": ["./tools/config/seed.tslint.json", "tslint-config-prettier"],
+  "rules": {}
+}
