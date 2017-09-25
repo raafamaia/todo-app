@@ -1,0 +1,22 @@
+version: '2.1'
+
+services:
+
+  scaffold:
+    build:
+      context: .
+      dockerfile: ./.docker/scaffold.development.dockerfile
+    command: npm start
+    container_name: scaffold-start
+    image: scaffold
+    volumes:
+      - .:/home/app/scaffold
+      - /home/app/scaffold/node_modules
+    networks:
+      - dev-network
+    ports:
+      - '5555:5555'
+
+networks:
+  dev-network:
+    driver: bridge
