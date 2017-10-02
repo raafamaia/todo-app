@@ -7,17 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
-const platform_browser_1 = require("@angular/platform-browser");
-const app_component_1 = require("./app.component");
-const card_component_1 = require("./card/card.component");
-let AppModule = class AppModule {
+let CardComponent = class CardComponent {
 };
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent, card_component_1.CardComponent],
-        bootstrap: [app_component_1.AppComponent]
+CardComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'todo-card',
+        templateUrl: 'card.component.html',
+        styleUrls: ['card.component.css']
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], CardComponent);
+exports.CardComponent = CardComponent;
+//# sourceMappingURL=card.component.js.map

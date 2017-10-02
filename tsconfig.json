@@ -1,14 +1,15 @@
 {
-  "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false,
-    "pretty": true
-    // "outDir": "build"
-  }
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true, //To be able to debug TS files during runtime we need source maps.
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false,
+        "pretty": true,
+        //"outFile": "dist/bundle", //Bundle all js files into one
+        "noEmitOnError": true //By default, TS compiler produces output even if there are errors during compilation.
+    }
 }
