@@ -1,7 +1,7 @@
 {
-  "name": "angular4-scaffold",
+  "name": "todo-app",
   "version": "1.0.0",
-  "description": "Maia's Angular v4 scaffold project.",
+  "description": "todo-app",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
